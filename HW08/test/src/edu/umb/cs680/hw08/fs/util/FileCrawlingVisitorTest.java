@@ -21,8 +21,4 @@ class FileCrawlingVisitorTest {
         f.getRootDirs().get(0).getSubDirectories().get(0).accept(visitor);
         assertEquals(2,visitor.getFiles().size());
     }
-
-
-
-
 }
