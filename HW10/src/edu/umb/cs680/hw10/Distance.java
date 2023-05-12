@@ -49,26 +49,6 @@ public class Distance {
 	}
 
 	public static void main(String[] args) throws Exception {
-		List<Double> p1 = List.of(0.0,5.0);
-		System.out.println(p1);
-		List<Double> p2 = List.of(5.0, 0.0);
-		System.out.println(p2);
-		List<Double> p3=List.of(11.0,12.0);
-		List<List<Double>> l=List.of(p1,p2);
-		System.out.println("---------------------------------------");
-		System.out.println("Manhattan Metrics");
-		System.out.println("---------------------------------------");
-		System.out.println(Distance.matrix(l,new Manhattan()));
-		System.out.println(Distance.get(p1,p2,new Manhattan()));
-		System.out.println("---------------------------------------");
-		System.out.println("Euclidean Metrics");
-		System.out.println("---------------------------------------");
-		System.out.println(Distance.matrix(l,new Euclidean()));
-		System.out.println(Distance.get(p1,p2,new Euclidean()));
-		System.out.println("---------------------------------------");
-		System.out.println("Cosine Metrics");
-		System.out.println("---------------------------------------");
-		System.out.println(Distance.matrix(l,new Cosine()));
-		System.out.println(Distance.get(p1,p2,new Cosine()));
+
 	}
 }
