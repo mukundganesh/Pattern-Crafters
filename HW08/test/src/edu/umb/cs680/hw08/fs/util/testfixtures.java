@@ -8,7 +8,7 @@ import edu.umb.cs680.hw08.fs.Link;
 import java.time.LocalDateTime;
 
 public class testfixtures {
-    protected static FileSystem f;
+    
 
     public static FileSystem createfs() {
 
@@ -45,11 +45,11 @@ public class testfixtures {
 
         src1.appendChild(d);
 
-        FileSystem f= FileSystem.getFileSystem();
-        f.appendRootDir(prjrootRoot);
+        
+        fileSystem.appendRootDir(prjrootRoot);
 
 
-        return f;
+        return fileSystem;
     }
 
 }
