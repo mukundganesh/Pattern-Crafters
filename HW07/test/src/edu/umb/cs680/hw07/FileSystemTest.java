@@ -25,4 +25,12 @@ class FileSystemTest {
         FileSystem fsyst1 = FileSystem.getFileSystem();
         assertEquals("prjRoot",fsyst1.getRootDirs().getFirst().getname());
     }
+    
+    @Test
+    void appednroottest(){
+        FileSystem fsyst1 = FileSystem.getFileSystem();
+        Directory roottest=new Directory(null,"Test",0,LocalDateTime.now());
+        fsyst1.appendRootDir(roottest);
+        assertEquals("Test",fsyst1.getRootDirs().get(1).getname());
+    }
 }
